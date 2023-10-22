@@ -285,7 +285,7 @@ void update()
 
     g_ball_position += g_ball_movement * g_player_speed * delta_time;
 
-    float collision_factor = 1.0f; // Adjust this factor for collision accuracy
+    float collision_factor = 1.0f; // collision accuracy
 
     float x1_distance = fabs(g_player1_position.x - g_ball_position.x) - ((1 * collision_factor + 1 * collision_factor) / 2.0f);
     float y1_distance = fabs(g_player1_position.y - g_ball_position.y) - ((1 * collision_factor + 1 * collision_factor) / 2.0f);
